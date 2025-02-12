@@ -1,0 +1,47 @@
+.footer {
+  background-color: #333;
+  padding: 3rem 2rem; /* More padding for a spacious layout */
+  text-align: center;
+  margin-top: 3rem;
+  color: #fff; /* White text for contrast */
+}
+
+.footer p {
+  font-size: 1.2rem; /* Increased font size for readability */
+  color: #bbb; /* Slightly lighter text color */
+}
+
+.footer .footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.footer .footer-links a {
+  font-size: 1.1rem; /* Slightly larger font size for better readability */
+  color: #bbb; /* Lighter color for links */
+  text-decoration: none;
+  padding: 0.5rem;
+  border-radius: 5px; /* Rounded corners for the links */
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Smooth transition on hover */
+}
+
+.footer .footer-links a:hover {
+  background-color: #e50914; /* Red background on hover */
+  color: #fff; /* White text color on hover */
+}
+
+/* Mobile Styling */
+@media (max-width: 768px) {
+  .footer .footer-links {
+    flex-direction: column; /* Stack links vertically */
+    gap: 1.5rem; /* Adjusted gap for smaller screens */
+    align-items: center; /* Center align the links */
+  }
+
+  .footer p {
+    font-size: 1.1rem; /* Slightly smaller text for mobile */
+  }
+}

@@ -1,0 +1,71 @@
+.banner {
+  position: relative;
+  height: 60vh; /* Keep the height responsive */
+  background: url("../images/Netflix-3.png") center/cover no-repeat; /* Ensure cover fit */
+  background-size: cover; /* Ensures the image covers the full container */
+  background-position: center center; /* Centers the image to ensure it looks good */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 50px;
+  object-fit: cover; /* If using <img> tag inside, this ensures it covers the space */
+  will-change: transform; /* Improves image rendering for smoother transitions */
+}
+
+.banner-content {
+  position: relative;
+  z-index: 10;
+  max-width: 90%;
+}
+
+.banner h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.banner p {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.banner input {
+  padding: 12px 20px;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  width: 350px;
+}
+
+.banner button {
+  margin-top: 1rem;
+  padding: 12px 36px;
+  background-color: #e50914;
+  font-size: 1.2rem;
+  border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+  .banner {
+    height: 40vh;
+    background-image: url("../images/Netflix-Mobile.png"); /* Mobile-specific image */
+  }
+
+  .banner h1 {
+    font-size: 2rem;
+  }
+
+  .banner p {
+    font-size: 1.2rem;
+  }
+
+  .banner input {
+    width: 80%;
+  }
+
+  .banner button {
+    padding: 10px 30px;
+  }
+}
